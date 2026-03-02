@@ -1,0 +1,55 @@
+@import "./theme.css";
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Fondo y tipografía global */
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html, body, #root {
+  background-color: var(--light-bg);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Botones */
+button {
+  font-family: inherit;
+}
+
+/* Scroll sutil estilo dashboard */
+.scroll-sutil {
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-text) transparent;
+}
+
+.scroll-sutil::-webkit-scrollbar-thumb {
+  background-color: var(--light-main);
+}
+
+.scroll-sutil::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 8px;
+}
+
+.scroll-sutil::-webkit-scrollbar-track {
+  background: transparent;
+}

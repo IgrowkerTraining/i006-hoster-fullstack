@@ -1,0 +1,59 @@
+/* Tema LIGHT */
+.light {
+	--light-text: #050534;
+	--light-bg: #f7f7ff;
+	--light-card: #f2f2ff;
+	/* utilizada para register + login */
+	--light-bg-register: #dcdbff;
+	--light-bg-center: #f7f7ff;
+	--light-input: #dcdbff;
+	--light-copyright: #a5a5a5;
+	/*utilizada para los inputs, el fondo de la tab, iconos y status*/
+	--light-main2: #dcdbff;
+	/*utilizada para outlines/bordes*/
+	--light-outline: #dcdbff;
+	/*utilizado para la seleccion del tab, botón inicio de sesión y registro*/
+	--light-accent: #5451ff;
+	--light-placeholder: #737373;
+	--light-chart1: #fbd781;
+	--light-chart2: #ffb703;
+	--light-chart3: #aa7a02;
+	/*utilizado para status pendiente, limpieza y mantenimiento*/
+	--light-status-pending: #ff8d28;
+	/*utilizado para status completado y disponible*/
+	--light-status-completed: #16bc00;
+	/*utilizado para status ocupado y no disponible*/
+	--light-status-ocupied: #ac0c0c;
+	--icono-navbar-selected: #f7f7ff;
+	--light-main: #C1C0FF;
+}
+
+/* Tema DARK */
+.dark {
+	--light-text: #f7f7ff;
+	--light-bg: #020617;
+	--light-card: #0f172a;
+	/* utilizada para register + login */
+	--light-bg-register: #020617;
+	--light-bg-center: #0f172a;
+	--light-input: #1f1e78;
+	--light-copyright: #a5a5a5;
+	/*utilizada para los botones*/
+	--light-main: #2d2b9a;
+	/*utilizada para outline/contorno*/
+	--light-outline: #334155;
+	/*utilizada para el fondo de la tab, inputs, iconos y status*/
+	--light-main2: #121256;
+	/*utilizado para la seleccion del tab*/
+	--light-accent: #4947e4;
+	--light-placeholder: #8e8e93;
+	--light-chart1: #fbd781;
+	--light-chart2: #ffb703;
+	--light-chart3: #aa7a02;
+	/*utilizado para status pendiente, limpieza y mantenimiento*/
+	--light-status-pending: #ff8d28;
+	/*utilizado para status completado y disponible*/
+	--light-status-completed: #16bc00;
+	/*utilizado para status ocupado y no disponible*/
+	--light-status-ocupied: #ac0c0c;
+}

@@ -6,7 +6,7 @@ export const ROUTES = {
 } as const;
 
 export const API_ENDPOINTS = {
-  BASE: 'http://localhost:3000/api',
+  BASE: import.meta.env.VITE_API_BASE_URL,
   AUTH: {
     LOGIN: '/auth/login',
     REGISTER: '/auth/register',

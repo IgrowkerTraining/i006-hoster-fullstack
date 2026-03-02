@@ -1,7 +1,7 @@
 {
-  "name": "cashtrakr_backend",
+  "name": "Hoster Backend",
   "version": "1.0.0",
-  "description": "backend de proyecto",
+  "description": "Proyecto de Hoster Backend para el entrenamiento de Igworker",
   "license": "ISC",
   "author": "",
   "type": "commonjs",

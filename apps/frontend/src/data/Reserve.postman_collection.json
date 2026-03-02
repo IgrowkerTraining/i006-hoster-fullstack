@@ -1,0 +1,92 @@
+{
+  "info": {
+    "_postman_id": "83d1aa99-713c-4a5c-ac79-43ceb70bef46",
+    "name": "Reserve",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "8209875",
+    "_collection_link": "https://go.postman.co/collection/8209875-83d1aa99-713c-4a5c-ac79-43ceb70bef46?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "CreateReserve",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/auth/create-currency",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "auth",
+            "create-currency"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetReserveById",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllReserves",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateReserveById",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/currency/update-currency/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "currency",
+            "update-currency",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteReserveById",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/api/currency/delete-currency/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "currency",
+            "delete-currency",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

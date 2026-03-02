@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "tipo": "Parking",
+    "icon": "Car",
+    "precio": 120,
+    "descripcion": "El servicio de parking en hoteles ofrece comodidad y seguridad, con valet parking, estacionamiento cubierto y opciones de carga para vehículos eléctricos."
+  },
+  {
+    "id": 2,
+    "tipo": "Desayuno",
+    "icon": "EggFried",
+    "precio": 20,
+    "descripcion": "Desayuno en formato autoservicio que incluye buffet continental y opciones calientes como huevos, panceta, salchichas, quesos, embutidos y estaciones de cocina en vivo."
+  },
+  {
+    "id": 3,
+    "tipo": "Lavandería",
+    "icon": "WashingMachine",
+    "precio": 120,
+    "descripcion": "Servicio de lavandería profesional que incluye lavado, secado, planchado y tintorería de prendas de huéspedes, además del tratamiento de lencería del hotel."
+  },
+  {
+    "id": 4,
+    "tipo": "Sala de reuniones",
+    "icon": "Projector",
+    "precio": 120,
+    "descripcion": "Espacios versátiles y equipados profesionalmente para eventos corporativos o sociales, con capacidad desde reuniones pequeñas hasta convenciones de más de 400 personas."
+  },
+  {
+    "id": 5,
+    "tipo": "Traslado Aeropuerto",
+    "icon": "CarTaxiFront",
+    "precio": 120,
+    "descripcion": "Servicio de traslado con precio fijo que ofrece comodidad y seguridad, incluyendo recepción con cartel, asistencia con equipaje y vehículos modernos."
+  },
+  {
+    "id": 6,
+    "tipo": "Masajes",
+    "icon": "Bubbles",
+    "precio": 120,
+    "descripcion": "Experiencias de relajación integral diseñadas para aliviar la tensión muscular, reducir el estrés y mejorar la circulación mediante técnicas terapéuticas."
+  },
+  {
+    "id": 7,
+    "tipo": "Alquiler de bicicletas",
+    "icon": "Bike",
+    "precio": 120,
+    "descripcion": "Servicio de alquiler de bicicletas que brinda movilidad sostenible, flexibilidad y una forma saludable de explorar el destino a tu propio ritmo."
+  },
+  {
+    "id": 8,
+    "tipo": "Tours",
+    "icon": "Binoculars",
+    "precio": 120,
+    "descripcion": "Paquetes organizados con actividades planificadas, excursiones guiadas, traslados y, en algunos casos, comidas, pensados para una experiencia cómoda y estructurada."
+  }
+]

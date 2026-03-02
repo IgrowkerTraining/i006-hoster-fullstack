@@ -1,0 +1,196 @@
+{
+    "actividadDiaria": [
+        {
+            "reservaId": 9203,
+            "estado": "Check-out",
+            "estadoDetalle": "Completado",
+            "cliente": {
+                "nombre": "Laura Perez"
+            },
+            "personas": 4,
+            "pago": "parcial",
+            "horarioEstimado": {
+                "salida": "14:30"
+            },
+            "habitacion": 306,
+            "serviciosAdicionales": {
+                "cantidad": 2,
+                "parking": true
+            },
+            "fechas": {
+                "llegada": "25/01/2026",
+                "salida": "02/02/2026"
+            }
+        },
+        {
+            "reservaId": 8976,
+            "estado": "Check-in",
+            "estadoDetalle": "Pendiente",
+            "cliente": {
+                "nombre": "Martín García"
+            },
+            "personas": 4,
+            "pago": "parcial",
+            "horarioEstimado": {
+                "llegada": "14:00"
+            },
+            "habitacion": 305,
+            "serviciosAdicionales": {
+                "cantidad": 0,
+                "parking": true
+            },
+            "fechas": {
+                "llegada": "02/02/2026",
+                "salida": "10/02/2026"
+            }
+        },
+        {
+            "reservaId": 9312,
+            "estado": "Check-in",
+            "estadoDetalle": "Confirmado",
+            "cliente": {
+                "nombre": "Sofía Rodríguez"
+            },
+            "personas": 2,
+            "pago": "completo",
+            "horarioEstimado": {
+                "llegada": "15:00"
+            },
+            "habitacion": 210,
+            "serviciosAdicionales": {
+                "cantidad": 1,
+                "parking": false
+            },
+            "fechas": {
+                "llegada": "05/02/2026",
+                "salida": "08/02/2026"
+            }
+        },
+        {
+            "reservaId": 9458,
+            "estado": "Check-out",
+            "estadoDetalle": "Pendiente",
+            "cliente": {
+                "nombre": "Diego Fernández"
+            },
+            "personas": 3,
+            "pago": "pendiente",
+            "horarioEstimado": {
+                "salida": "11:00"
+            },
+            "habitacion": 412,
+            "serviciosAdicionales": {
+                "cantidad": 3,
+                "parking": true
+            },
+            "fechas": {
+                "llegada": "28/01/2026",
+                "salida": "01/02/2026"
+            }
+        }
+    ],
+    "ultimasActividades": [
+        {
+            "reservaId": 9203,
+            "tipo": "Nueva reserva",
+            "cliente": "Mario García",
+            "personas": 4,
+            "pago": "Parcial",
+            "hora": "14:30",
+            "habitacion": "06",
+            "serviciosAdicionales": 0,
+            "parking": true,
+            "fechas": {
+                "llegada": "13/10/2026",
+                "salida": "20/10/2026"
+            }
+        },
+        {
+            "reservaId": 8976,
+            "tipo": "Modificación",
+            "cliente": "Martín García",
+            "personas": 4,
+            "pago": "Parcial",
+            "hora": "14:00",
+            "habitacion": "05",
+            "serviciosAdicionales": 0,
+            "parking": true,
+            "fechas": {
+                "llegada": "02/02/2026",
+                "salida": "10/02/2026"
+            }
+        },
+        {
+            "reservaId": 8456,
+            "tipo": "Modificación",
+            "cliente": "Gonzalo Gómez",
+            "personas": 2,
+            "pago": "Total",
+            "hora": "13:05",
+            "habitacion": "01",
+            "serviciosAdicionales": 0,
+            "parking": false,
+            "fechas": {
+                "llegada": "27/01/2026",
+                "salida": "02/02/2026"
+            }
+        },
+        {
+            "reservaId": 8476,
+            "tipo": "Cancelación",
+            "cliente": "Laura García",
+            "personas": 2,
+            "pago": "Devuelto",
+            "hora": "13.00",
+            "cabana": "01",
+            "serviciosAdicionales": 0,
+            "parking": false,
+            "fechas": {
+                "llegada": "27/02/2026",
+                "salida": "02/03/2026"
+            }
+        },
+        {
+            "reservaId": 8544,
+            "tipo": "Servicio asignado",
+            "cliente": "Laura García",
+            "personas": 2,
+            "hora": "10.00",
+            "cabana": "02",
+            "serviciosAdicionales": {
+                "desayuno": true
+            },
+            "parking": false,
+            "fecha": "02/02/2026"
+        }
+    ],
+    "mantenimiento": {
+        "vista": "global",
+        "items": [
+            {
+                "id": "H-306",
+                "lugar": "Habitación 306",
+                "tipo": "Limpieza",
+                "estado": "Pendiente",
+                "duracionEstimada": "1h",
+                "responsable": "María López"
+            },
+            {
+                "id": "H-315",
+                "lugar": "Habitación 315",
+                "tipo": "Limpieza",
+                "estado": "Pendiente",
+                "duracionEstimada": "1h",
+                "responsable": "María López"
+            },
+            {
+                "id": "C-2",
+                "lugar": "Cabaña 2",
+                "tipo": "Mantenimiento",
+                "estado": "Pendiente",
+                "duracionEstimada": "2h",
+                "responsable": "Carlos Gómez"
+            }
+        ]
+    }
+}

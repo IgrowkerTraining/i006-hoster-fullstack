@@ -1,7 +1,6 @@
-import { Table, Column, Model, DataType, HasMany, Default, Unique, AllowNull, BelongsTo,ForeignKey} from "sequelize-typescript";
-
-// import MedioPago from "./MedioPago";
-// import Moneda from "./Moneda";
+import { Table, Column, Model, DataType, HasMany, Default, Unique, AllowNull, BelongsTo,ForeignKey} from 'sequelize-typescript'
+import Method from './Method'
+import Currency from './Currency'
 
 @Table({
   tableName: "payments"
@@ -9,32 +8,38 @@ import { Table, Column, Model, DataType, HasMany, Default, Unique, AllowNull, Be
 class Payment extends Model {
 
   @AllowNull(false)
-  @Column(DataType.DATE)
-  declare date: Date;
+  @Column({
+    type: DataType.DATE
+  })
+  declare date: Date
 
-  @Column(DataType.FLOAT)
-  declare partialAmount: number;
+  @Column({
+    type: DataType.DECIMAL(10, 2)
+  })
+  declare partialAmount: number
 
   @AllowNull(false)
-  @Column(DataType.FLOAT)
-  declare totalAmount: number;
+  @Column({
+    type: DataType.DECIMAL(10, 2)
+  })
+  declare totalAmount: number
 
-  @Column(DataType.FLOAT)
-  declare outstandingAmount: number;
+  @Column({
+    type: DataType.DECIMAL(10, 2)
+  })
+  declare outstandingAmount: number
 
-  // @ForeignKey(() => MedioPago)
-  // @Column(DataType.INTEGER)
-  // declare medioPagoId: number;
+  @ForeignKey(() => Method)
+  declare methodId: number;
 
-  // @BelongsTo(() => MedioPago)
-  // medioPago!: MedioPago;
+  @BelongsTo(() => Method)
+  declare method: Method;
 
-  // @ForeignKey(() => Moneda)
-  // @Column(DataType.INTEGER)
-  // declare monedaId: number;
+  @ForeignKey(() => Currency)
+  declare currencyId: number;
 
-  // @BelongsTo(() => Moneda)
-  // moneda!: Moneda;
+  @BelongsTo(() => Currency)
+  declare currency: Currency;
 }
 
 export default Payment;

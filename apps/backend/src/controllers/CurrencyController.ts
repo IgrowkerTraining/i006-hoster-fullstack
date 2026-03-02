@@ -3,29 +3,6 @@ import Currency from "../models/Currency"
 
 export class CurrencyController {
 
-    static getCurrencyById = async (req: Request ,res: Response ) => {
-        const {id} = req.params
-        try {
-            const currency = await Currency.findByPk(id)
-            if (!currency) {
-                const error = new Error('Moneda no encontrada')
-                return res.status(404).json({error: error.message})
-            }
-            res.json(currency)
-        } catch (error) {
-            res.status(500).json({error: 'Hubo un Error'})
-        }
-    }
-    
-    static getAllCurrency = async (req: Request ,res: Response ) => {
-        try {
-            const currencies = await Currency.findAll()
-            res.json(currencies)
-        } catch (error) {
-            res.status(500).json({error: 'Hubo un Error'})
-        }
-    }
-
     static createCurrency = async (req: Request ,res: Response ) => {
             const {name, symbol} = req.body
     
@@ -44,7 +21,16 @@ export class CurrencyController {
                 //console.log(error)
                 res.status(500).json({error: 'Hubo un Error'})
             }
+    }
+
+    static getAllCurrency = async (req: Request ,res: Response ) => {
+        try {
+            const currencies = await Currency.findAll()
+            res.json(currencies)
+        } catch (error) {
+            res.status(500).json({error: 'Hubo un Error'})
         }
+    }
 
     static updateCurrencyById = async (req: Request ,res: Response ) => {
         const {id} = req.params
@@ -57,6 +43,20 @@ export class CurrencyController {
             }
             await currency.update(req.body)
             res.json('Moneda actualizada correctamente')
+        } catch (error) {
+            res.status(500).json({error: 'Hubo un Error'})
+        }
+    }
+
+    static getCurrencyById = async (req: Request ,res: Response ) => {
+        const {id} = req.params
+        try {
+            const currency = await Currency.findByPk(id)
+            if (!currency) {
+                const error = new Error('Moneda no encontrada')
+                return res.status(404).json({error: error.message})
+            }
+            res.json(currency)
         } catch (error) {
             res.status(500).json({error: 'Hubo un Error'})
         }
